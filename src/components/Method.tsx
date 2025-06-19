@@ -31,29 +31,32 @@ const Method = () => {
   ];
 
   return (
-    <section className="py-20 gradient-green">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <p className="text-white/80 mb-4">Para todos nossos métodos</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-white">Método Origami</h2>
+    <section className="relative py-24 my-24">
+
+      <img
+        src="/bg_line.png"
+        alt="Fundo"
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      />
+
+      <div className="container relative mx-auto py-16 px-4 z-40">
+        <div className="text-center pb-16">
+          <p className="text-white/80">Para todos nossos métodos</p>
+          <h2 className="text-4xl md:text-5xl font-black text-white">Método Origami</h2>
         </div>
-        
+
+
         <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {steps.map((step, index) => (
-            <div 
+            <div
               key={index}
-              className="text-center group animate-fadeInUp"
+              className="text-center group animate-fadeInUp flex flex-col items-center"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-all duration-200">
-                  <step.icon className="w-10 h-10 text-white" />
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-white text-brand-green rounded-full flex items-center justify-center font-bold text-sm">
-                  {step.number}
-                </div>
+              <div className="relative bg-brand-dark text-brand-white w-7 h-7 rounded-full mb-6 flex items-start justify-center">
+                {step.number}
               </div>
-              
+
               <h3 className="text-xl font-bold text-white mb-4">
                 {step.title}
               </h3>

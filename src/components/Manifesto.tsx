@@ -28,11 +28,11 @@ const Manifesto = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <p className="text-brand-gray mb-4">A forma como fazemos</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-brand-green mb-12">Nosso Manifesto</h2>
+          <p className="text-brand-gray">A forma como fazemos</p>
+          <h2 className="text-4xl md:text-5xl font-black bg-text-gradient bg-clip-text text-transparent mb-12">Nosso Manifesto</h2>
         </div>
         
         <div className="grid md:grid-cols-5 gap-8 max-w-6xl mx-auto mb-12">
@@ -42,8 +42,8 @@ const Manifesto = () => {
               className="text-center group animate-fadeInUp"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 hover:scale-105 h-full">
-                <h3 className="text-lg font-bold text-brand-dark mb-4 leading-tight">
+              <div className="bg-white p-6  transition-all duration-200 hover:scale-105 h-full">
+                <h3 className="text-lg font-bold text-brand-gray mb-4 leading-tight">
                   {principle.title}
                 </h3>
                 <p className="text-brand-gray text-sm leading-relaxed">

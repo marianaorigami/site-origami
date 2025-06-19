@@ -34,7 +34,7 @@ const ValueSection = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <p className="text-brand-gray mb-4">Nosso conhecimento que impulsiona grandes empresas</p>
+          <p className="text-brand-gray">Nosso conhecimento que impulsiona grandes empresas</p>
           <h2 className="text-4xl md:text-5xl font-black bg-text-gradient bg-clip-text text-transparent">Como geramos valor</h2>
         </div>
 
