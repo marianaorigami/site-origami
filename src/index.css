@@ -1,0 +1,179 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+
+    --primary: 163 100% 34%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 19% 23%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 38%;
+    --muted-foreground: 0 0% 38%;
+
+    --accent: 163 100% 34%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 163 100% 34%;
+
+    --radius: 0.5rem;
+
+    /* Custom brand colors */
+    --brand-green: 163 100% 34%;
+    --brand-dark: 0 0% 13%;
+    --brand-gray-dark: 200 19% 23%;
+    --brand-gray: 0 0% 38%;
+    --brand-white: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 0 0% 13%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 13%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 13%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 163 100% 34%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 19% 23%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 38%;
+    --muted-foreground: 0 0% 38%;
+
+    --accent: 163 100% 34%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 19% 23%;
+    --input: 200 19% 23%;
+    --ring: 163 100% 34%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes swing {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-swing {
+  animation: swing 4s ease-in-out infinite;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* Custom gradients */
+.gradient-green {
+  background: linear-gradient(135deg, #00AF69 0%, #2D4A4C 100%);
+}
+
+.text-gradient-green {
+  color: linear-gradient(135deg, #00AF69 0%, #2D4A4C 100%) !important;
+}
+
+.gradient-dark {
+  background: linear-gradient(135deg, #212121 0%, #2D4A4C 100%);
+}
+
+/* Geometric shapes */
+.geometric-shape {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.diamond-shape {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
