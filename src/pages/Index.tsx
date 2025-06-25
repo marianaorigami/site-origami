@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import ValueSection from '@/components/ValueSection';
-import Manifesto from '@/components/Manifesto';
+import Manifest from '@/components/Manifest';
 import Method from '@/components/Method';
 import Clients from '@/components/Clients';
 import Cases from '@/components/Cases';
@@ -16,7 +16,7 @@ const Index = () => {
       <Header />
       <Hero />
       <ValueSection />
-      <Manifesto />
+      <Manifest />
       <Method />
       <Clients />
       <Cases />
