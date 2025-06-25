@@ -19,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				poppins: ['Poppins', 'sans-serif'],
+			},
 			backgroundImage: {
 				'text-gradient': 'linear-gradient(to right, #10B981, #059669, #1C3C36)',
 			},
