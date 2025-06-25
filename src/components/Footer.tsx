@@ -10,8 +10,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 bg-brand-green geometric-shape"></div>
-              <span className="text-2xl font-bold">origami</span>
+              <img src="/img/logo_white.svg" alt="" />
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
               Laboratório de inovação que conecta grandes empresas aos melhores métodos de startups 
