@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, MoveRight } from 'lucide-react';
 
 const Cases = () => {
   const cases = [
@@ -40,21 +40,21 @@ const Cases = () => {
           {cases.map((caseItem, index) => (
             <div
               key={index}
-              className="bg-white p-4 flex flex-col gap-4 border rounded-md overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 hover:scale-105 group animate-fadeInUp"
+              className="bg-white p-4 flex flex-col gap-4 border rounded-md overflow-hidden hover:shadow-md transition-all duration-200 hover:scale-105 group animate-fadeInUp"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className={`h-48 ${caseItem.image}`}></div>
               <div className="flex flex-col gap-8">
                 <div>
-                  <div className="text-xs font-light text-brand-gray bg-gray-300 w-fit px-2 rounded-sm">
+                  <div className="text-xs font-thin text-brand-gray bg-gray-300 w-fit px-2 rounded-sm">
                     {caseItem.tag}
                   </div>
-                  <h3 className="text-xl font-medium text-brand-dark">
+                  <h3 className="text-xl font-semibold text-brand-dark">
                     {caseItem.title}
                   </h3>
                   <p className='text-xs text-brand-gray'>{caseItem.subtitle}</p>
                 </div>
-                <p className="mb-4 leading-relaxed">
+                <p className="mb-4 text-sm font-light leading-relaxed">
                   {caseItem.description}
                 </p>
               </div>
@@ -62,13 +62,11 @@ const Cases = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-end mt-12">
           <Button
-            variant="outline"
-            size="lg"
-            className="border-brand-green text-brand-green hover:bg-brand-green hover:text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-200 hover:scale-105"
+            className="text-thin bg-brand-dark hover:bg-brand-dark text-white px-6 py-2 rounded-md transition-all duration-200 hover:scale-105"
           >
-            Ver todos os cases
+            Ver todos os cases <MoveRight className="h-4 w-4" />
           </Button>
         </div>
       </div>
