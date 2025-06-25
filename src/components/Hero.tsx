@@ -9,7 +9,7 @@ const Hero = () => {
     <section id="home" className="relative min-h-svh flex items-center justify-center overflow-hidden ">
 
       <img 
-        src="/bg.png" 
+        src="/background/bg.png" 
         alt="Fundo" 
         className="absolute inset-0 w-full h-full object-cover z-0"
       />

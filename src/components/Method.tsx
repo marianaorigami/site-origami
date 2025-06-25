@@ -34,7 +34,7 @@ const Method = () => {
     <section className="relative py-24">
 
       <img
-        src="/bg_line.png"
+        src="/background/bg_line.png"
         alt="Fundo"
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
