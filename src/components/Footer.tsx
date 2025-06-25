@@ -13,22 +13,19 @@ const Footer = () => {
               <img src="/img/logo_white.svg" alt="" />
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
-              Laboratório de inovação que conecta grandes empresas aos melhores métodos de startups 
+              Laboratório de inovação que conecta grandes empresas aos melhores métodos de startups
               para gerar resultados tangíveis e transformação real.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+              <a href="https://www.linkedin.com/company/binari-digital/posts/?feedView=all" className="w-10 h-10 bg-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform">
                 <Linkedin className="w-5 h-5 text-white" />
               </a>
-              <a href="#" className="w-10 h-10 bg-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform">
-                <Twitter className="w-5 h-5 text-white" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+              <a href="https://www.instagram.com/origamilab_br/" className="w-10 h-10 bg-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform">
                 <Instagram className="w-5 h-5 text-white" />
               </a>
             </div>
           </div>
-          
+
           {/* Contact Info */}
           <div>
             <h3 className="text-xl font-bold mb-6 text-brand-green">Contato</h3>
@@ -47,22 +44,21 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Links */}
           <div>
             <h3 className="text-xl font-bold mb-6 text-brand-green">Endereço</h3>
             <div className="space-y-3">
               <p className="text-gray-300">
-                Av. das Nações Unidas, 14.171<br />
-                Conjunto Nacional<br />
-                04794-000<br />
-                São Paulo - SP
+                Rua Monsenhor João Ivo, Nº 34<br />
+                Formiga, Minas Gerais<br />
+                35570-104, Sala 3<br />
               </p>
             </div>
           </div>
         </div>
         
-        {/* Copyright */}
+{/* Copyright */}
         <div className="border-t border-gray-700 pt-8 text-center">
           <p className="text-gray-400">
             © 2024 Origami. Todos os direitos reservados.

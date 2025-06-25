@@ -8,25 +8,25 @@ const Method = () => {
       number: 1,
       icon: Search,
       title: 'Imersão Estratégica',
-      description: 'Fazemos com junto a identificação de mercado e necessidades negócio importante de empresas.'
+      description: 'Entramos na empresa, ouvimos e identificamos os desafios reais.'
     },
     {
       number: 2,
       icon: Lightbulb,
-      title: 'Prototipação e Diagnóstico',
-      description: 'Aceleramos a fase e protativação de desenvolvimento de sistema empresarial e negócios.'
+      title: 'Pesquisa e Diagnóstico',
+      description: 'Analisamos cultura, processos e dados para entender o contexto com profundidade.'
     },
     {
       number: 3,
       icon: Users,
       title: 'Co-criação e Implementação',
-      description: 'Desenvolvemos e estabelece, desenvolvendo habilidade de desenvolvimento em setores de trabalho.'
+      description: 'Desenvolvemos e entregamos soluções sob medida, com agilidade e qualidade.'
     },
     {
       number: 4,
       icon: CheckCircle,
       title: 'Validação por Métricas',
-      description: 'Verificamos os escalas de Implementação dos novamente avaliação e investigação.'
+      description: 'Medimos os resultados com indicadores claros. Sucesso só vem com impacto real.'
     }
   ];
 
@@ -41,7 +41,7 @@ const Method = () => {
 
       <div className="container relative mx-auto py-16 px-4 z-40">
         <div className="text-center pb-16">
-          <p className="text-white/80">Para todos nossos métodos</p>
+          <p className="text-white/80">As dobras que geram a solução.</p>
           <h2 className="text-4xl md:text-5xl font-black text-white">Método Origami</h2>
         </div>
 

@@ -17,7 +17,7 @@ const Clients = () => {
     <section className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <p className="text-brand-gray mb-4">Empresas que já confiaram na nossa experiência</p>
+          <p className="text-brand-gray mb-4">Empresas que já confiam na nossa experiência</p>
           <h2 className="text-4xl md:text-5xl font-black bg-text-gradient bg-clip-text text-transparent">Nossos Clientes</h2>
         </div>
 

@@ -7,25 +7,25 @@ const ValueSection = () => {
     {
       icon: GraduationCap,
       title: 'Capacitação',
-      subtitle: 'Lorem ipsum',
+      subtitle: 'Formamos equipes preparadas para inovar.',
       description: 'Oferecemos capacitação completa para desenvolver tecnologias de desenvolvimento, aplicações e gestão operacional na empresa.'
     },
     {
       icon: Users,
       title: 'Negócios e Gestão',
-      subtitle: 'Lorem ipsum',
+      subtitle: 'Convertendo ideias em recursos financeiros estratégicos.',
       description: 'Construímos negócios sustentáveis com performance avançada de métricas operacionais, garantindo a experiência necessária importantes.'
     },
     {
       icon: TrendingUp,
       title: 'Investimentos e Incentivos',
-      subtitle: 'Lorem ipsum',
+      subtitle: 'Criamos e gerimos oportunidades estratégicas de crescimento.',
       description: 'Acesso a fundos e investimentos focados para complementar a capacidade de investir em crescimento abrangendo soluções.'
     },
     {
       icon: Zap,
       title: 'Inovação Colaborativa',
-      subtitle: 'Lorem ipsum',
+      subtitle: 'Potencializamos soluções com parcerias inteligentes.',
       description: 'Combinamos sua empresa cliente ao universalismo e esfera logísticas que geram ideias inovadoras e criar soluções mais mais elevados que de tecnologia e desenvolvimento.'
     }
   ];
@@ -34,7 +34,7 @@ const ValueSection = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <p className="text-brand-gray">Nosso conhecimento que impulsiona grandes empresas</p>
+          <p className="text-brand-gray">Nossos caminhos para transformar grandes empresas</p>
           <h2 className="text-4xl md:text-5xl font-black bg-text-gradient bg-clip-text text-transparent">Como geramos valor</h2>
         </div>
 

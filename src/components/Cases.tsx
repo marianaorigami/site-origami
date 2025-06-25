@@ -8,22 +8,22 @@ const Cases = () => {
     {
       title: 'Transformação Digital Industrial',
       tag: "Manufatura",
-      subtitle: 'Indústria · Inovação',
-      description: 'Desenvolvimento de sistema de dados para implementação de novas tecnologias de produção.',
+      subtitle: 'IoT · Análise de Dados · Indústria 4.0',
+      description: 'Desenvolvimento de sistema IoT para monitoramento em tempo real da produção.',
       image: 'bg-gray-300'
     },
     {
       title: 'Plataforma de Gestão de Inovação',
       tag: "Manufatura",
-      subtitle: 'Tecnologia · Startup',
-      description: 'Plataforma inovadora para gestão de desenvolvimento e projetos de inovação.',
+      subtitle: 'Software · Gestão · Inovação',
+      description: 'Software proprietário para gerenciar portfólio de inovação e P&D.',
       image: 'bg-gray-300'
     },
     {
       title: 'Programa de Inovação Aberta',
       tag: "Manufatura",
-      subtitle: 'Corporativo · Strategy',
-      description: 'Hub de inovação corporativa para desenvolvimento entre múltiplas subsidiárias.',
+      subtitle: 'Inovação Aberta · Startups · P&D',
+      description: 'Estruturação completa de programa de conexão com startups e academia.',
       image: 'bg-gray-300'
     }
   ];

@@ -96,7 +96,7 @@ const Header = () => {
               <Button
                 className="bg-brand-green hover:bg-brand-green/90 text-white mt-4 rounded-full"
               >
-                Quero uma proposta
+                Quero inovar agora
               </Button>
             </nav>
           </div>
