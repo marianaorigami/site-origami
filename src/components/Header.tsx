@@ -33,8 +33,7 @@ const Header = () => {
 
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 
-        text-brand-white ${scrolled ? "bg-white shadow-md text-black" : "bg-transparent"
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-white shadow-md text-black" : "bg-transparent text-brand-white"
       }`} >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
@@ -94,10 +93,10 @@ const Header = () => {
                 </a>
               ))}
               <Button
-                className="bg-brand-green hover:bg-brand-green/90 text-white mt-4 rounded-full"
-              >
-                Quero inovar agora
-              </Button>
+              className="bg-brand-dark hover:bg-brand-dark text-white px-6 py-2 rounded-md transition-all duration-200 hover:scale-105"
+            >
+              Quero uma proposta <MoveRight className="h-4 w-4" />
+            </Button>
             </nav>
           </div>
         )}
