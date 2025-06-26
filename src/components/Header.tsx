@@ -58,7 +58,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button
-              className="bg-brand-dark hover:bg-brand-dark text-white px-6 py-2 rounded-md transition-all duration-200 hover:scale-105"
+              className="bg-brand-dark text-white px-6 py-2 rounded-md transition-all duration-200 hover:scale-105"
             >
               Quero uma proposta <MoveRight className="h-4 w-4" />
             </Button>

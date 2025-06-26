@@ -28,7 +28,7 @@ const CTA = () => {
 
           <div className="animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
             <Button
-              className="font-thin text-lg bg-brand-white hover:bg-brand-dark text-brand-gray-dark px-4 py-2 rounded-md transition-all duration-200 hover:scale-105"
+              className="font-thin text-lg bg-brand-white text-brand-gray-dark px-4 py-2 rounded-md transition-all duration-200 hover:scale-105"
             >
               Entre em contato <MoveRight className="h-4 w-4" />
             </Button>

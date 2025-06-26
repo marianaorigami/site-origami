@@ -1,6 +1,3 @@
-
-import React from 'react';
-
 const GeometricBackground = () => {
   return (
     <div className="absolute inset-0 overflow-hidden">
