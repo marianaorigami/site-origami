@@ -14,7 +14,21 @@ const CTA = () => {
         className="absolute rotate-180 inset-0 w-full h-full object-cover z-0"
       />
 
-      <GeometricBackground />
+      <div className="absolute top-20 right-0 w-56 md:top-96 md:right-10 md:w-64 md:h-96 opacity-20 animate-swing">
+        <img
+          src="/background/icon_animated.png"
+          alt=""
+          className="w-full h-full object-contain"
+        />
+      </div>
+
+      <div className="absolute w-56 left-10 bottom-20 md:bottom-56 md:left-10 md:w-44 md:h-80 opacity-15 animate-swing" style={{ animationDelay: '2s' }}>
+        <img
+          src="/background/icon_animated.png"
+          alt=""
+          className="w-full h-full object-contain"
+        />
+      </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white">

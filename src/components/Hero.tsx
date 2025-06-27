@@ -14,8 +14,21 @@ const Hero = () => {
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
 
-      <GeometricBackground />
+      <div className="absolute top-0 right-0 w-64  md:top-10 md:right-10 md:w-96 md:h-96 opacity-20 animate-spin360">
+        <img
+          src="/background/icon_animated.png"
+          alt=""
+          className="w-full h-full object-contain"
+        />
+      </div>
 
+      <div className="absolute w-56 left-10 bottom-20 md:bottom-56 md:left-10 md:w-72 md:h-80 opacity-15 animate-spin360">
+        <img
+          src="/background/icon_animated.png"
+          alt=""
+          className="w-full h-full object-contain"
+        />
+      </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white">

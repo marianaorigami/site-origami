@@ -71,9 +71,9 @@ const Header = () => {
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <X className="w-6 h-6 text-brand-dark" />
+              <X className="w-6 h-6" />
             ) : (
-              <Menu className="w-6 h-6 text-brand-dark" />
+              <Menu className="w-6 h-6" />
             )}
           </button>
         </div>

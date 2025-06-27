@@ -75,7 +75,7 @@ export default {
 					'gray-dark': '#2D4A4C',
 					gray: '#616161',
 					white: '#FFFFFF'
-				}
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -118,7 +118,17 @@ export default {
 				'pulse-slow': {
 					'0%, 100%': { opacity: '1' },
 					'50%': { opacity: '0.5' }
-				}
+				},
+				skewPulse: {
+					'0%': { transform: 'skewY(5deg)' },
+					'50%': { transform: 'skewY(-5deg)' },
+					'100%': { transform: 'skewY(5deg)' },
+				},
+				spin360: {
+					'0%, 100%': { transform: 'rotateY(0deg)' },
+					'25%': { transform: 'rotateY(45deg)' },
+					'75%': { transform: 'rotateY(-45deg)' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -127,7 +137,9 @@ export default {
 				swing: 'swing 4s ease-in-out infinite',
 				fadeInUp: 'fadeInUp 0.8s ease-out forwards',
 				slideInRight: 'slideInRight 0.8s ease-out forwards',
-				'pulse-slow': 'pulse-slow 3s ease-in-out infinite'
+				'pulse-slow': 'pulse-slow 3s ease-in-out infinite',
+				skewPulse: 'skewPulse 5s ease-in-out infinite',
+				spin360: 'spin360 6s ease-in-out infinite',
 			}
 		}
 	},
