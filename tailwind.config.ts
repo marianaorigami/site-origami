@@ -125,9 +125,14 @@ export default {
 					'100%': { transform: 'skewY(5deg)' },
 				},
 				spin360: {
-					'0%, 100%': { transform: 'rotateY(0deg)' },
-					'25%': { transform: 'rotateY(45deg)' },
-					'75%': { transform: 'rotateY(-45deg)' },
+					'0%': { transform: 'rotateZ(2deg)' },
+					'15%': { transform: 'rotateZ(8deg)' },
+					'30%': { transform: 'rotateZ(-8deg)' },
+					'45%': { transform: 'rotateZ(4deg)' },
+					'60%': { transform: 'rotateZ(-4deg)' },
+					'75%': { transform: 'rotateZ(5deg)' },
+					'90%': { transform: 'rotateZ(-5deg)' },
+					'100%': { transform: 'rotateZ(2deg)' },
 				},
 			},
 			animation: {
