@@ -1,7 +1,8 @@
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
 import { ArrowRight, MoveRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import ButtonLink from './ui/buttonlink';
 
 const Cases = () => {
   const cases = [
@@ -63,11 +64,12 @@ const Cases = () => {
         </div>
 
         <div className="text-end mt-12">
-          <Button
-            className="text-thin bg-brand-dark hover:bg-brand-dark text-white px-6 py-2 rounded-md transition-all duration-200 hover:scale-105"
+          <ButtonLink
+            to="/cases"
+            className="bg-brand-dark font-thin text-brand-white"
           >
-            Ver todos os cases <MoveRight className="h-4 w-4" />
-          </Button>
+            Ver mais cases
+          </ButtonLink>
         </div>
       </div>
     </section>

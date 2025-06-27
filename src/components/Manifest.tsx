@@ -1,7 +1,7 @@
 
-import React from 'react';
-import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import ButtonLink from './ui/buttonlink';
 
 const Manifesto = () => {
   const principles = [
@@ -55,13 +55,12 @@ const Manifesto = () => {
         </div>
 
         <div className="text-center">
-          <Button
-            size="lg"
-            className="bg-text-gradient font-thin text-brand-white hover:bg-white/90 px-8 py-4 rounded-md text-lg transition-all duration-200 hover:scale-105 group"
-          >
-            Vamos inovar juntos?
-            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          <ButtonLink
+              to="/contactus"
+              className="bg-brand-dark font-thin text-brand-white"
+            >
+              Vamos inovar juntos?
+            </ButtonLink>
         </div>
       </div>
     </section>

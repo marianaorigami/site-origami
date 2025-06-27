@@ -1,8 +1,9 @@
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import GeometricBackground from './GeometricBackground';
+import { Link } from 'react-router-dom';
+import ButtonLink from './ui/buttonlink';
 
 const Hero = () => {
   return (
@@ -45,13 +46,12 @@ const Hero = () => {
           </p>
 
           <div className="animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
-            <Button
-              size="lg"
-              className="bg-white font-thin text-brand-gray-dark hover:bg-white/90 px-8 py-4 rounded-md text-lg transition-all duration-200 hover:scale-105 group"
+            <ButtonLink
+              to="/contactus"
+              className="bg-brand-dark font-thin text-brand-white px-8 py-4 text-lg"
             >
               Vamos inovar juntos?
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            </ButtonLink> 
           </div>
         </div>
       </div>

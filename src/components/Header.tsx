@@ -1,8 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
-import { Menu, MoveRight, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { useLocation } from "react-router-dom";
+import { ArrowRight, Menu, MoveRight, X } from 'lucide-react';
+import { Link, useLocation } from "react-router-dom";
+import ButtonLink from './ui/buttonlink';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,7 +46,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img className='h-8' src={scrolled  || isNotHome ? "/img/logo_color.svg " : "/img/logo_white.svg"} alt="Logo" />
+            <img className='h-8' src={scrolled || isNotHome ? "/img/logo_color.svg " : "/img/logo_white.svg"} alt="Logo" />
           </div>
 
           {/* Desktop Navigation */}
@@ -64,11 +64,12 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button
-              className="bg-brand-dark text-white px-6 py-2 rounded-md transition-all duration-200 hover:scale-105"
+            <ButtonLink
+              to="/contactus"
+              className="bg-brand-dark font-thin text-brand-white"
             >
-              Quero uma proposta <MoveRight className="h-4 w-4" />
-            </Button>
+              Vamos inovar juntos?
+            </ButtonLink>
           </div>
 
           {/* Mobile Menu Button */}
@@ -99,11 +100,12 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Button
-                className="bg-brand-dark hover:bg-brand-dark text-white px-6 py-2 rounded-md transition-all duration-200 hover:scale-105"
+              <ButtonLink
+                to="/contactus"
+                className="bg-brand-dark font-thin text-brand-white"
               >
-                Quero uma proposta <MoveRight className="h-4 w-4" />
-              </Button>
+                Vamos inovar juntos?
+              </ButtonLink>
             </nav>
           </div>
         )}

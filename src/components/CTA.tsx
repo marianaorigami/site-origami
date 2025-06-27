@@ -1,8 +1,5 @@
-
-import React from 'react';
-import { Button } from '@/components/ui/button';
 import { ArrowRight, MoveRight } from 'lucide-react';
-import GeometricBackground from './GeometricBackground';
+import ButtonLink from './ui/buttonlink';
 
 const CTA = () => {
   return (
@@ -41,11 +38,12 @@ const CTA = () => {
           </p>
 
           <div className="animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
-            <Button
-              className="font-thin text-lg bg-brand-white text-brand-gray-dark px-4 py-2 rounded-md transition-all duration-200 hover:scale-105"
+            <ButtonLink
+              to="/contactus"
+              className="bg-white font-thin text-brand-gray-dark px-8 py-4 text-lg"
             >
-              Entre em contato <MoveRight className="h-4 w-4" />
-            </Button>
+              Vamos inovar juntos?
+            </ButtonLink>
           </div>
         </div>
       </div>
