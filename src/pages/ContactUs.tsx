@@ -7,20 +7,18 @@ const ContactUs = () => {
 
 
             {/* Contact Form Section */}
-            <div className="w-full pt-24 flex flex-col items-center gap-9 bg-gradient-radial-brand">
-                <div className="flex flex-col justify-center items-center">
-                    <div className="text-white text-center font-poppins text-xs font-normal tracking-[-0.96px]">
-                        Entenda mais sobre o universo Origami
-                    </div>
-                    <div className="text-white text-center font-poppins text-[28px] font-black leading-normal">
-                        Vamos conversar?
-                    </div>
+            <section className="container mx-auto w-full pt-24 flex flex-col items-center gap-9 bg-text-gradient">
+
+                <div className="text-center mb-8">
+                    <p className="text-brand-white mb-4">Entenda mais sobre o universo Origami</p>
+                    <h2 className="text-4xl md:text-5xl font-black text-brand-white">Vamos conversar?</h2>
                 </div>
 
-                <div className="flex flex-col items-start gap-6 w-full max-w-4xl">
+                <div className="flex flex-col items-start gap-6 w-full max-w-6xl mx-auto mb-12">
+
                     {/* First Row - Nome and Sobrenome */}
-                    <div className="flex items-start gap-6 w-full">
-                        <div className="flex flex-col justify-center items-start gap-2 flex-1">
+                    <div className="flex items-start gap-6 w-full flex-col md:flex-row">
+                        <div className="flex flex-col justify-center items-start gap-2 flex-1 w-full">
                             <label className="text-white text-center font-poppins text-xs font-normal tracking-[-0.96px]">
                                 Nome
                             </label>
@@ -29,7 +27,7 @@ const ContactUs = () => {
                                 className="flex h-[34px] px-4 py-2 justify-center items-center gap-[10px] w-full rounded-lg border border-background-secondary bg-white"
                             />
                         </div>
-                        <div className="flex flex-col justify-center items-start gap-2 flex-1">
+                        <div className="flex flex-col justify-center items-start gap-2 flex-1 w-full">
                             <label className="text-white text-center font-poppins text-xs font-normal tracking-[-0.96px]">
                                 Sobrenome
                             </label>
@@ -41,8 +39,8 @@ const ContactUs = () => {
                     </div>
 
                     {/* Second Row - Email and Telefone */}
-                    <div className="flex items-start gap-6 w-full">
-                        <div className="flex flex-col justify-center items-start gap-2 flex-1">
+                    <div className="flex items-start gap-6 w-full flex-col md:flex-row">
+                        <div className="flex flex-col justify-center items-start gap-2 flex-1 w-full">
                             <label className="text-white text-center font-poppins text-xs font-normal tracking-[-0.96px]">
                                 Email
                             </label>
@@ -51,7 +49,7 @@ const ContactUs = () => {
                                 className="flex h-[34px] px-4 py-2 justify-center items-center gap-[10px] w-full rounded-lg border border-background-secondary bg-white"
                             />
                         </div>
-                        <div className="flex flex-col justify-center items-start gap-2 flex-1">
+                        <div className="flex flex-col justify-center items-start gap-2 flex-1 w-full">
                             <label className="text-white text-center font-poppins text-xs font-normal tracking-[-0.96px]">
                                 Telefone
                             </label>
@@ -96,7 +94,7 @@ const ContactUs = () => {
                         </span>
                     </button>
                 </div>
-            </div>
+            </section>
 
             {/* Copyright */}
             <div className="flex py-2 justify-center items-center gap-[10px] w-full bg-background-secondary">

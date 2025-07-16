@@ -6,7 +6,7 @@ const About = () => {
     <div className="min-h-screen font-poppins">
       <Header />
 
-      <div className="flex w-full px-[120px] pt-24 flex-col items-center">
+      <div className="flex w-full pt-24 flex-col items-center">
         <div className="text-center">
           <p className="text-brand-gray">Como nasceu a Origami</p>
           <h2 className="text-4xl md:text-5xl font-black bg-text-gradient bg-clip-text text-transparent mb-12">Quem Somos</h2>
