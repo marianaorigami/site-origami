@@ -45,9 +45,9 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <img className='h-8' src={scrolled || isNotHome ? "/img/logo_color.svg " : "/img/logo_white.svg"} alt="Logo" />
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -91,14 +91,14 @@ const Header = () => {
           <div className="md:hidden py-4 border-t border-border animate-fadeInUp">
             <nav className="flex flex-col space-y-3">
               {navItems.map((item) => (
-                <a
+                <Link 
                   key={item.name}
-                  href={item.href}
+                  to={item.href}
                   className="hover:text-brand-green transition-colors duration-200 font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
               <ButtonLink
                 to="/contactus"
