@@ -6,7 +6,6 @@ import ValueSection from '@/components/ValueSection';
 import Manifest from '@/components/Manifest';
 import Method from '@/components/Method';
 import Clients from '@/components/Clients';
-import Cases from '@/components/Cases';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
 
@@ -19,7 +18,6 @@ const Index = () => {
       <Manifest />
       <Method />
       <Clients />
-      <Cases />
       <CTA />
       <Footer />
     </div>
