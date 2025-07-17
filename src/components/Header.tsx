@@ -44,23 +44,25 @@ const Header = () => {
       }`} >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <img className='h-8' src={scrolled || isNotHome ? "/img/logo_color.svg " : "/img/logo_white.svg"} alt="Logo" />
-          </Link>
+          <div className='flex flex-row gap-12'>
+            {/* Logo */}
+            <Link to="/" className="flex items-center space-x-2">
+              <img className='h-8' src={scrolled || isNotHome ? "/img/logo_color.svg " : "/img/logo_white.svg"} alt="Logo" />
+            </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="hover:text-brand-green transition-colors duration-200"
-              >
-                {item.name}
-              </a>
-            ))}
-          </nav>
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center space-x-8">
+              {navItems.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="hover:text-brand-green transition-colors duration-200"
+                >
+                  {item.name}
+                </a>
+              ))}
+            </nav>
+          </div>
 
           {/* CTA Button */}
           <div className="hidden md:block">
@@ -68,7 +70,7 @@ const Header = () => {
               to="/contactus"
               className="bg-brand-dark font-thin text-brand-white"
             >
-              Vamos inovar juntos?
+              Inove Conosco
             </ButtonLink>
           </div>
 
@@ -91,7 +93,7 @@ const Header = () => {
           <div className="md:hidden py-4 border-t border-border animate-fadeInUp">
             <nav className="flex flex-col space-y-3">
               {navItems.map((item) => (
-                <Link 
+                <Link
                   key={item.name}
                   to={item.href}
                   className="hover:text-brand-green transition-colors duration-200 font-medium py-2"
