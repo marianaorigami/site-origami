@@ -7,7 +7,7 @@ const Manifesto = () => {
   const principles = [
     {
       title: 'Somos curiosos, não críticos',
-      description: 'Investigamos causas e buscamos entender antes de julgar.'
+      description: 'Investigamos com foco no entendimento.'
     },
     {
       title: 'Geramos resultados que podemos provar',
@@ -35,18 +35,18 @@ const Manifesto = () => {
           <h2 className="text-4xl md:text-5xl font-black bg-text-gradient bg-clip-text text-transparent mb-12">Nosso Manifesto</h2>
         </div>
 
-        <div className="grid md:grid-cols-5 gap-8 max-w-6xl mx-auto mb-12">
+        <div className="grid md:grid-cols-5 mx-auto mb-12">
           {principles.map((principle, index) => (
             <div
               key={index}
               className="text-center group animate-fadeInUp"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="bg-white p-6  transition-all duration-200 hover:scale-105 h-full">
+              <div className="bg-white p-6 w-full  transition-all duration-200 hover:scale-105 h-full">
                 <h3 className="text-lg font-bold text-brand-gray mb-4 leading-tight">
                   {principle.title}
                 </h3>
-                <p className="text-brand-gray text-sm leading-relaxed">
+                <p className="text-brand-dark text-sm leading-relaxed">
                   {principle.description}
                 </p>
               </div>
@@ -59,7 +59,7 @@ const Manifesto = () => {
               to="/contactus"
               className="bg-brand-dark font-thin text-brand-white"
             >
-              Vamos inovar juntos?
+              Inove Conosco
             </ButtonLink>
         </div>
       </div>
