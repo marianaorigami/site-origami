@@ -11,7 +11,7 @@ const CTA = () => {
         className="absolute rotate-180 inset-0 w-full h-full object-cover z-0"
       />
 
-      <div className="absolute top-20 right-0 w-56 md:top-96 md:right-10 md:w-64 md:h-96 opacity-20 animate-spin360">
+      <div className="absolute top-20 right-0 w-56 md:top-96 md:right-10 md:w-80 opacity-20">
         <img
           src="/background/icon_animated.png"
           alt=""
@@ -19,7 +19,7 @@ const CTA = () => {
         />
       </div>
 
-      <div className="absolute w-56 left-10 bottom-20 md:bottom-56 md:left-10 md:w-44 md:h-80 opacity-15 animate-spin360" style={{ animationDelay: '2s' }}>
+      <div className="absolute w-56 left-10 bottom-20 md:bottom-56 md:left-10 md:w-96 opacity-15" style={{ animationDelay: '2s' }}>
         <img
           src="/background/icon_animated.png"
           alt=""
@@ -42,7 +42,7 @@ const CTA = () => {
               to="/contactus"
               className="bg-white font-thin text-brand-gray-dark px-8 py-4 text-lg"
             >
-              Vamos inovar juntos?
+              Inove Conosco
             </ButtonLink>
           </div>
         </div>
