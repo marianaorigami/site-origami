@@ -1,4 +1,8 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+
+import 'swiper/css';
 
 const Clients = () => {
   const clients = [
@@ -14,8 +18,8 @@ const Clients = () => {
   ];
 
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-16">
+    <section className="py-20 overflow-x-hidden">
+      <div className="container mx-auto px-6 md:px-16">
         <div className="text-center mb-16">
           <p className="text-brand-gray mb-4">
             Empresas que já confiam na nossa experiência
@@ -25,28 +29,38 @@ const Clients = () => {
           </h2>
         </div>
 
-        <div className="flex flex-wrap justify-center items-center gap-24">
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={20}
+          slidesPerView={2}
+          breakpoints={{
+            640: { slidesPerView: 3 },
+            768: { slidesPerView: 4 },
+            1024: { slidesPerView: 5 }
+          }}
+          loop={true}
+          autoplay={{ delay: 1000, disableOnInteraction: false }}
+          className="!overflow-visible"
+        >
           {clients.map((client, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center justify-between h-24 w-28"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              {client.image === "" ? (
-                <span className="font-black text-center flex items-center justify-center h-16">
-                  {client.name}
-                </span>
-              ) : (
-                <img
-                  src={client.image}
-                  alt={client.name}
-                  className="h-16 max-w-full object-contain"
-                />
-              )}
-              <div className="text-sm text-brand-gray text-center">{client.type_service}</div>
-            </div>
+            <SwiperSlide key={index}>
+              <div className="flex flex-col items-center justify-between h-24 w-20">
+                {client.image === "" ? (
+                  <span className="font-black text-center flex items-center justify-center h-16">
+                    {client.name}
+                  </span>
+                ) : (
+                  <img
+                    src={client.image}
+                    alt={client.name}
+                    className="h-16 max-w-full object-contain"
+                  />
+                )}
+                <div className="text-sm text-brand-gray text-center mt-2">{client.type_service}</div>
+              </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </section>
   );
