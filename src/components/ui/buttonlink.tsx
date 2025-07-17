@@ -29,7 +29,7 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({ to, children, className }) => {
         ${className ?? ""}
       `}
         >
-            {children} <MoveRight className="h-4 w-4 ml-2" />
+            {children}
         </button>
     );
 };

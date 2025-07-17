@@ -70,7 +70,7 @@ const Header = () => {
               to="/contactus"
               className="bg-brand-dark font-thin text-brand-white"
             >
-              Inove Conosco
+              Inove Conosco <MoveRight className="h-4 w-4 ml-2" />
             </ButtonLink>
           </div>
 

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, MoveRight } from 'lucide-react';
 import GeometricBackground from './GeometricBackground';
 import { Link } from 'react-router-dom';
 import ButtonLink from './ui/buttonlink';
@@ -62,7 +62,7 @@ const Hero = () => {
               to="/contactus"
               className="bg-brand-white font-thin text-brand-dark px-8 py-4 text-lg"
             >
-              Inove Conosco
+              Inove Conosco <MoveRight className="h-4 w-4 ml-2" />
             </ButtonLink> 
           </div>
         </div>

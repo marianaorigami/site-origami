@@ -42,7 +42,7 @@ const CTA = () => {
               to="/contactus"
               className="bg-white font-thin text-brand-gray-dark px-8 py-4 text-lg"
             >
-              Inove Conosco
+              Inove Conosco <MoveRight className="h-4 w-4 ml-2" />
             </ButtonLink>
           </div>
         </div>

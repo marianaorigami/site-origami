@@ -1,5 +1,5 @@
 
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, MoveRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ButtonLink from './ui/buttonlink';
 
@@ -59,7 +59,7 @@ const Manifesto = () => {
               to="/contactus"
               className="bg-brand-dark font-thin text-brand-white"
             >
-              Inove Conosco
+              Inove Conosco <MoveRight className="h-4 w-4 ml-2" />
             </ButtonLink>
         </div>
       </div>
