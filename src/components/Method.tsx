@@ -46,11 +46,11 @@ const Method = () => {
         </div>
 
 
-        <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="flex flex-col md:flex-row md:justify-between mx-auto">
           {steps.map((step, index) => (
             <div
               key={index}
-              className="text-center group animate-fadeInUp flex flex-col items-center"
+              className="text-center group animate-fadeInUp flex flex-col items-center max-w-4xl"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative bg-brand-dark text-brand-white w-7 h-7 rounded-full mb-6 flex items-start justify-center">
