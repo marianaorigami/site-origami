@@ -18,7 +18,7 @@ const Clients = () => {
   ];
 
   return (
-    <section className="py-20 overflow-x-hidden">
+    <section className="py-20 overflow-x-hidden" id='clients'>
       <div className="container mx-auto px-6 md:px-16">
         <div className="text-center mb-16">
           <p className="text-brand-gray mb-4">

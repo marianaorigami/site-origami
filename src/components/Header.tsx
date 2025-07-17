@@ -13,9 +13,11 @@ const Header = () => {
 
 
   const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'Quem Somos', href: '/about' },
-    { name: 'Calculadora do Bem', href: '#method' },
+    { name: 'Início', href: '/#' },
+    { name: 'Valor', href: '/#value' },
+    { name: 'Manifesto', href: '#manifest' },
+    { name: 'Método', href: '#method' },
+    { name: 'Clientes', href: '#clients' },
   ];
 
 

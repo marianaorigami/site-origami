@@ -28,7 +28,7 @@ const Manifesto = () => {
   ];
 
   return (
-    <section>
+    <section id='manifest'>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <p className="text-brand-gray">A Essência que Nos Guia</p>

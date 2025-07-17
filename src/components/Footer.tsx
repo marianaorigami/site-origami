@@ -32,15 +32,15 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-brand-green" />
-                <span className="text-gray-300">(11) 99999-9999</span>
+                <span className="text-gray-300">(31) 9805-5189</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-brand-green" />
-                <span className="text-gray-300">contato@origami.com.br</span>
+                <span className="text-gray-300">contato@origamilab.com.br</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-brand-green" />
-                <span className="text-gray-300">São Paulo, SP</span>
+                <span className="text-gray-300">Formiga, MG</span>
               </div>
             </div>
           </div>

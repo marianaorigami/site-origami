@@ -31,7 +31,7 @@ const ValueSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" id='value'>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <p className="text-brand-gray">Nossos caminhos para transformar grandes empresas</p>

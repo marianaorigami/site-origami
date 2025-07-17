@@ -31,7 +31,7 @@ const Method = () => {
   ];
 
   return (
-    <section className="relative py-24">
+    <section className="relative py-24" id='method'>
 
       <img
         src="/background/bg_line.png"
