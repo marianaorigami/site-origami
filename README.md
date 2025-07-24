@@ -1,73 +1,118 @@
-# Welcome to your Lovable project
+# Origami Lab
 
-## Project info
+Um projeto web dedicado a oferecer tutoriais, dicas e recursos para aprender e criar origamis incríveis.
 
-**URL**: https://lovable.dev/projects/1649e5e9-19cf-49bb-84a7-e0db8e52c9d5
+---
 
-## How can I edit this code?
+## 🎯 Visão Geral
 
-There are several ways of editing your application.
+O **Origami Lab** é uma aplicação front-end construída em **React** com **Vite** e **TypeScript**, com foco em performance, acessibilidade e PWA.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1649e5e9-19cf-49bb-84a7-e0db8e52c9d5) and start prompting.
+## 🚀 Tecnologias
 
-Changes made via Lovable will be committed automatically to this repo.
+* **React**
+* **Vite**
+* **TypeScript**
+* **Tailwind CSS** (ou outro framework de estilo de sua escolha)
+* **Google Fonts** (Poppins)
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 💾 Instalação
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone este repositório:
 
-Follow these steps:
+   ```bash
+   git clone https://github.com/seu-usuario/site-origami.git
+   cd site-origami
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. Instale as dependências:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🛠️ Desenvolvimento
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Para iniciar o servidor de desenvolvimento, execute:
+
+```bash
 npm run dev
+# ou
+yarn dev
 ```
 
-**Edit a file directly in GitHub**
+Abra [http://localhost:5173](http://localhost:5173) no navegador para visualizar.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📦 Build & Preview
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Para criar os artefatos de produção:
 
-## What technologies are used for this project?
+```bash
+npm run build
+# ou
+yarn build
+```
 
-This project is built with:
+Para pré-visualizar o build:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+npm run preview
+# ou
+yarn preview
+```
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/1649e5e9-19cf-49bb-84a7-e0db8e52c9d5) and click on Share -> Publish.
+## 🚀 Deploy
 
-## Can I connect a custom domain to my Lovable project?
+Este projeto pode ser hospedado em qualquer serviço estático como **Vercel**, **Netlify** ou **GitHub Pages**. Basta apontar o diretório de saída (`dist`) para o serviço de hospedagem.
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📂 Estrutura de Pastas
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```
+site-origami/
+├─ public/            # Arquivos estáticos (favicon, manifest, imagens)
+│  ├─ favicon.ico
+│  ├─ index.html      # Template HTML do Vite
+│  └─ og-image.png
+├─ src/
+│  ├─ assets/         # Imagens e recursos estáticos
+│  ├─ components/     # Componentes React reutilizáveis
+│  ├─ pages/          # Páginas (ou rotas se usar router)
+│  ├─ styles/         # CSS (Tailwind config ou estilos globais)
+│  └─ main.tsx        # Ponto de entrada da aplicação
+├─ .gitignore
+├─ index.html         # Template principal (em raiz ou public)
+├─ vite.config.ts     # Configuração do Vite
+├─ package.json
+└─ README.md
+```
+
+---
+
+## 🤝 Contribuição
+
+1. Fork este repositório.
+2. Crie uma branch com sua feature: `git checkout -b feature/nova-funcionalidade`.
+3. Commit suas mudanças: `git commit -m "feat: descrição da feature"`.
+4. Faça push: `git push origin feature/nova-funcionalidade`.
+5. Abra um Pull Request.
+
+---
+
+## 📝 Licença
+
+Este projeto está licenciado sob a **MIT License**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---

@@ -1,26 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Origami Lab</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<html lang="pt-BR">
 
-    <meta property="og:title" content="verdant-wave-landing" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <title>Origami Lab</title>
+  <meta name="description"
+    content="Inove como uma startup. Cresça como uma gigante." />
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  </head>
+  <link rel="canonical" href="https://site-origami.vercel.app/" />
+  <meta property="og:site_name" content="Origami Lab" />
+  <meta property="og:title" content="Origami Lab" />
+  <meta property="og:description"
+    content="Inove como uma startup. Cresça como uma gigante." />
+  <meta property="og:url" content="https://site-origami.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://site-origami.vercel.app/img/og-image.png" />
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@OrigamiLab" />
+  <meta name="twitter:title" content="Origami Lab" />
+  <meta name="twitter:description"
+    content="Inove como uma startup. Cresça como uma gigante." />
+  <meta name="twitter:image" content="https://site-origami.vercel.app/img/og-image.png" />
+
+  <!-- Favicon e PWA Manifest -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Origami Lab",
+        "url": "https://site-origami.vercel.app/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://site-origami.vercel.app/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+</head>
+
+<body>
+  <noscript>
+    <strong>Para uma melhor experiência, habilite o JavaScript no seu navegador.</strong>
+  </noscript>
+  <div id="root"></div>
+  <!-- Carregamento otimizado de scripts -->
+  <script type="module" src="/src/main.tsx" defer></script>
+</body>
+
 </html>
