@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { Users, TrendingUp, Zap, GraduationCap } from 'lucide-react';
 
 const ValueSection = () => {
@@ -35,7 +34,7 @@ const ValueSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <p className="text-brand-gray">Nossos caminhos para transformar grandes empresas</p>
-          <h2 className="text-4xl md:text-5xl font-black bg-text-gradient bg-clip-text text-transparent">Como geramos valor</h2>
+          <h2 className="text-4xl md:text-5xl font-black bg-text-gradient bg-clip-text text-transparent md:h-16">Como geramos valor</h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">

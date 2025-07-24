@@ -156,7 +156,6 @@
   animation: pulse-slow 3s ease-in-out infinite;
 }
 
-/* Custom gradients */
 .gradient-green {
   background: linear-gradient(135deg, #00AF69 0%, #2D4A4C 100%);
 }
@@ -169,7 +168,6 @@
   background: linear-gradient(135deg, #212121 0%, #2D4A4C 100%);
 }
 
-/* Geometric shapes */
 .geometric-shape {
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
