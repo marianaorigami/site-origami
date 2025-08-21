@@ -4,7 +4,6 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
-import Cases from "./pages/Cases";
 
 const queryClient = new QueryClient();
 
@@ -15,7 +14,6 @@ const App = () => (
         <Route path="/" element={<Index />} />
         <Route path="/about" element={<About />} />
         <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/cases" element={<Cases />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

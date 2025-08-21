@@ -1,113 +1,68 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { MotionFade } from "@/components/MotionFade";
 
 const About = () => {
   return (
     <div className="min-h-screen font-poppins">
       <Header />
 
-      <div className="flex w-full pt-24 flex-col items-center">
-        <div className="text-center">
-          <p className="text-brand-gray">Como nasceu a Origami</p>
-          <h2 className="text-4xl md:text-5xl font-black bg-text-gradient bg-clip-text text-transparent mb-12">Quem Somos</h2>
+      <section className="pt-24 px-4">
+        <div className="text-center mb-16">
+          <p className="text-brand-gray text-lg">Como nasceu a Origami</p>
+          <h2 className="text-4xl md:text-5xl font-black bg-text-gradient bg-clip-text text-transparent">
+            Quem Somos
+          </h2>
         </div>
 
-        <div className="container flex max-w-6xl mx-auto pb-16 flex-col items-start gap-4">
-          <div className="flex justify-center items-center gap-[10px] w-full">
-            <div className="flex-1 text-black text-justify font-poppins font-normal tracking-[-0.96px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              et condimentum risus, at euismod ligula. Donec elementum quam
-              placerat placerat elementum. Fusce facilisis magna eget mauris
-              condimentum congue. Aenean fermentum ipsum urna, eget elementum
-              sapien placerat iaculis. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Ut ut feugiat metus. Pellentesque luctus turpis
-              vel nisl auctor, in ultrices sapien iaculis. Donec varius
-              efficitur velit, eget ullamcorper metus facilisis ac. Proin ut
-              venenatis nisi. Vestibulum eget mauris sit amet enim fringilla
-              sodales. Vestibulum fermentum, mauris ac consequat ultrices, ipsum
-              augue malesuada ipsum, quis luctus tellus tortor ut lacus. Duis
-              egestas tellus non lobortis feugiat. Sed eget turpis luctus lectus
-              maximus lacinia. Maecenas vitae suscipit diam. Ut congue, diam
-              vitae accumsan consectetur, tellus massa iaculis enim, vel euismod
-              lacus justo sed augue. Maecenas fermentum facilisis aliquet.
-              <br />
-              <br />
-              Quisque mollis aliquet suscipit. In ultricies mattis rutrum. Donec
-              viverra non leo et eleifend. Donec mollis ac turpis a vehicula.
-              Quisque consequat consequat efficitur. Fusce in egestas libero,
-              quis pellentesque est. Phasellus lorem ex, accumsan at posuere
-              rutrum, bibendum eget magna.
-              <br />
-              <br />
-              In iaculis urna ut odio dictum semper. Pellentesque sit amet felis
-              nulla. Donec eu ligula lobortis, convallis metus non, ultrices
-              tortor. Integer ornare orci ut leo egestas ornare. Aliquam erat
-              massa, mattis eget nibh vulputate, aliquet congue ante. Quisque
-              pretium mattis facilisis. Nunc ac ultrices quam, sit amet mollis
-              leo. Maecenas fermentum magna quis quam interdum dictum.
-              Pellentesque pretium lacinia ex.
+        <div className="max-w-6xl mx-auto flex flex-col gap-12">
+          <MotionFade delay={0.1}>
+            <div className="flex flex-col-reverse md:flex-row items-center gap-12">
+              <div className="flex-1 text-black text-justify tracking-tight leading-relaxed">
+                Fundada em 2023, a Origami Lab conta com o propósito de transformar negócios através da inovação com disciplina. Sediada no Centro-Oeste de Minas Gerais, somos pioneiros na região, unimos estratégia, tecnologia e design para ajudar organizações a se reinventarem frente aos desafios do presente e do futuro.
+                Nosso time é liderado por profissionais com sólida experiência em projetos nacionais e internacionais:
+              </div>
             </div>
-          </div>
+          </MotionFade>
 
-          <div className="flex items-center flex-col md:flex-row gap-9 w-full">
-            <div className="flex text-black text-justify font-poppins font-normal tracking-[-0.96px] w-full">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Curabitur et condimentum risus, at euismod ligula. Donec
-              elementum quam placerat placerat elementum. Fusce facilisis
-              magna eget mauris condimentum congue. Aenean fermentum ipsum
-              urna, eget elementum sapien placerat iaculis. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit. Ut ut feugiat metus.
-              Pellentesque luctus turpis vel nisl auctor, in ultrices sapien
-              iaculis. Donec varius efficitur velit, eget ullamcorper metus
-              facilisis ac. Proin ut venenatis nisi. Vestibulum eget mauris
-              sit amet enim fringilla sodales. Vestibulum fermentum, mauris ac
-              consequat ultrices, ipsum augue malesuada ipsum, quis luctus
-              tellus tortor ut lacus. Duis egestas tellus non lobortis
-              feugiat. Sed eget turpis luctus lectus maximus lacinia. Maecenas
-              vitae suscipit diam. Ut congue, diam vitae accumsan consectetur,
-              tellus massa iaculis enim, vel euismod lacus justo sed augue.
-              Maecenas fermentum facilisis aliquet.
+          <MotionFade delay={0.2}>
+            <div className="flex flex-col md:flex-row items-center justify-between gap-12 border px-24 py-8 transition-all duration-300 hover:shadow-md">
+              <div className="md:w-1/2 text-black text-justify text-lg tracking-tight leading-relaxed">
+                Victor Couto, sócio-fundador, atua há mais de 15 anos liderando iniciativas de inovação e transformação digital. Com passagens por projetos no Brasil e no exterior, é especialista em usar tecnologia e design estratégico para impulsionar resultados e gerar impacto real nos negócios.               </div>
+              <div className="md:w-1/2 w-full max-w-[300px] aspect-square shadow-[12px_12px_0_0_#2D4A4C]">
+                <img
+                  src="/people/victor_picture.jpeg"
+                  alt="Victor"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
-            <div className="w-[259px] h-[197px] bg-[#D9D9D9]"></div>
-          </div>
+          </MotionFade>
 
-          <div className="flex justify-center items-center gap-[10px] w-full">
-            <div className="flex-1 text-black text-justify font-poppins font-normal tracking-[-0.96px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              et condimentum risus, at euismod ligula. Donec elementum quam
-              placerat placerat elementum. Fusce facilisis magna eget mauris
-              condimentum congue. Aenean fermentum ipsum urna, eget elementum
-              sapien placerat iaculis. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Ut ut feugiat metus. Pellentesque luctus turpis
-              vel nisl auctor, in ultrices sapien iaculis. Donec varius
-              efficitur velit, eget ullamcorper metus facilisis ac. Proin ut
-              venenatis nisi. Vestibulum eget mauris sit amet enim fringilla
-              sodales. Vestibulum fermentum, mauris ac consequat ultrices, ipsum
-              augue malesuada ipsum, quis luctus tellus tortor ut lacus. Duis
-              egestas tellus non lobortis feugiat. Sed eget turpis luctus lectus
-              maximus lacinia. Maecenas vitae suscipit diam. Ut congue, diam
-              vitae accumsan consectetur, tellus massa iaculis enim, vel euismod
-              lacus justo sed augue. Maecenas fermentum facilisis aliquet.
-              <br />
-              <br />
-              Quisque mollis aliquet suscipit. In ultricies mattis rutrum. Donec
-              viverra non leo et eleifend. Donec mollis ac turpis a vehicula.
-              Quisque consequat consequat efficitur. Fusce in egestas libero,
-              quis pellentesque est. Phasellus lorem ex, accumsan at posuere
-              rutrum, bibendum eget magna.
-              <br />
-              <br />
-              In iaculis urna ut odio dictum semper. Pellentesque sit amet felis
-              nulla. Donec eu ligula lobortis, convallis metus non, ultrices
-              tortor. Integer ornare orci ut leo egestas ornare. Aliquam erat
-              massa, mattis eget nibh vulputate, aliquet congue ante. Quisque
-              pretium mattis facilisis. Nunc ac ultrices quam, sit amet mollis
-              leo. Maecenas fermentum magna quis quam interdum dictum.
-              Pellentesque pretium lacinia ex.
+          <MotionFade delay={0.3}>
+            <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-12 mb-12 border px-24 py-8 transition-all duration-300 hover:shadow-md">
+              <div className="md:w-1/2 text-black text-justify text-lg tracking-tight leading-relaxed">
+                Maria Cecília Coelho, engenheira civil com MBA em Inovação, é referência na gestão de produtos digitais. Com uma trajetória de mais de 8 anos em tecnologia, marcada pela entrega de soluções utilizadas por milhões de brasileiros e pela atuação em projetos internacionais, destaca-se por sua visão estratégica, excelência técnica e forte liderança.
+              </div>
+              <div className="md:w-1/2 w-full max-w-[300px] aspect-square shadow-[12px_12px_0_0_#00AF69]">
+                <img
+                  src="/people/cecilia_picture.jpeg"
+                  alt="Maria Cecília"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
-          </div>
+          </MotionFade>
+
+          <MotionFade delay={0.4}>
+            <div className="flex flex-col-reverse md:flex-row items-center gap-12 mb-16">
+              <h2 className="text-3xl md:text-4xl text-center font-black bg-text-gradient bg-clip-text text-transparent">
+                Trabalhamos para transformar desafios em soluções concretas, com método, visão e impacto real.
+              </h2>
+            </div>
+          </MotionFade>
         </div>
-      </div>
+      </section>
 
       <Footer />
     </div>

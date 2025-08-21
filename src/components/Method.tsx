@@ -1,6 +1,6 @@
-
-import React from 'react';
+"use client";
 import { Search, Lightbulb, Users, CheckCircle } from 'lucide-react';
+import { MotionFade } from "@/components/MotionFade";
 
 const Method = () => {
   const steps = [
@@ -32,7 +32,6 @@ const Method = () => {
 
   return (
     <section className="relative py-24" id='method'>
-
       <img
         src="/background/bg_line.png"
         alt="Fundo"
@@ -45,25 +44,20 @@ const Method = () => {
           <h2 className="text-4xl md:text-5xl font-black text-white">Método Origami</h2>
         </div>
 
-
-        <div className="flex flex-col md:flex-row md:justify-between mx-auto">
+        <div className="flex flex-col md:flex-row md:justify-between mx-auto gap-8">
           {steps.map((step, index) => (
-            <div
+            <MotionFade
               key={index}
-              className="text-center group animate-fadeInUp flex flex-col items-center max-w-4xl"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              delay={index * 0.15}
+              className="text-center flex flex-col items-center max-w-4xl"
             >
               <div className="relative bg-brand-dark text-brand-white w-7 h-7 rounded-full mb-6 flex items-start justify-center">
                 {step.number}
               </div>
 
-              <h3 className="text-xl font-bold text-white mb-4">
-                {step.title}
-              </h3>
-              <p className="text-white/80 text-sm leading-relaxed">
-                {step.description}
-              </p>
-            </div>
+              <h3 className="text-xl font-bold text-white mb-4">{step.title}</h3>
+              <p className="text-white/80 text-sm leading-relaxed">{step.description}</p>
+            </MotionFade>
           ))}
         </div>
       </div>

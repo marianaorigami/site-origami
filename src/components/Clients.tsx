@@ -1,6 +1,8 @@
+"use client";
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
+import { MotionFade } from "@/components/MotionFade";
 
 import 'swiper/css';
 
@@ -44,7 +46,7 @@ const Clients = () => {
         >
           {clients.map((client, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col items-center justify-between h-24 w-20">
+              <MotionFade delay={index * 0.1} className="flex flex-col items-center justify-between h-24 w-20">
                 {client.image === "" ? (
                   <span className="font-black text-center flex items-center justify-center h-16">
                     {client.name}
@@ -57,7 +59,7 @@ const Clients = () => {
                   />
                 )}
                 <div className="text-sm text-brand-gray text-center mt-2">{client.type_service}</div>
-              </div>
+              </MotionFade>
             </SwiperSlide>
           ))}
         </Swiper>

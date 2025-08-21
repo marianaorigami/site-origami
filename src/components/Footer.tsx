@@ -1,14 +1,15 @@
-
+"use client";
 import React from 'react';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Instagram } from 'lucide-react';
+import { MotionFade } from "@/components/MotionFade";
 
 const Footer = () => {
   return (
     <footer className="bg-brand-dark text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
-          {/* Logo and Description */}
-          <div className="md:col-span-2">
+
+          <MotionFade delay={0.1} className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
               <img src="/img/logo_white.svg" alt="" />
             </div>
@@ -24,15 +25,14 @@ const Footer = () => {
                 <Instagram className="w-5 h-5 text-white" />
               </a>
             </div>
-          </div>
+          </MotionFade>
 
-          {/* Contact Info */}
-          <div>
+          <MotionFade delay={0.2}>
             <h3 className="text-xl font-bold mb-6 text-brand-green">Contato</h3>
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-brand-green" />
-                <span className="text-gray-300">(31) 9805-5189</span>
+                <span className="text-gray-300">(31) 99805-5189</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-brand-green" />
@@ -43,10 +43,9 @@ const Footer = () => {
                 <span className="text-gray-300">Formiga, MG</span>
               </div>
             </div>
-          </div>
+          </MotionFade>
 
-          {/* Links */}
-          <div>
+          <MotionFade delay={0.3}>
             <h3 className="text-xl font-bold mb-6 text-brand-green">Endereço</h3>
             <div className="space-y-3">
               <p className="text-gray-300">
@@ -55,15 +54,15 @@ const Footer = () => {
                 35570-104, Sala 3<br />
               </p>
             </div>
-          </div>
+          </MotionFade>
         </div>
-        
-{/* Copyright */}
-        <div className="border-t border-gray-700 pt-8 text-center">
+
+        <MotionFade delay={0.4} className="border-t border-gray-700 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 Origami. Todos os direitos reservados.
+            © {new Date().getFullYear()} Origami. Todos os direitos reservados.
           </p>
-        </div>
+        </MotionFade>
+
       </div>
     </footer>
   );
