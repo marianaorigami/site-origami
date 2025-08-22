@@ -5,28 +5,28 @@ import { MotionFade } from "@/components/MotionFade";
 const ValueSection = () => {
   const values = [
     {
-      icon: GraduationCap,
-      title: 'Capacitação',
-      subtitle: 'Formamos equipes preparadas para inovar.',
-      description: 'Oferecemos capacitação completa para desenvolver tecnologias de desenvolvimento, aplicações e gestão operacional na empresa.'
-    },
-    {
-      icon: Users,
-      title: 'Negócios e Gestão',
-      subtitle: 'Convertendo ideias em recursos financeiros estratégicos.',
-      description: 'Construímos negócios sustentáveis com performance avançada de métricas operacionais, garantindo a experiência necessária importantes.'
-    },
-    {
       icon: TrendingUp,
       title: 'Investimentos e Incentivos',
       subtitle: 'Criamos e gerimos oportunidades estratégicas de crescimento.',
       description: 'Acesso a fundos e investimentos focados para complementar a capacidade de investir em crescimento abrangendo soluções.'
     },
     {
+      icon: Users,
+      title: 'Metodologia',
+      subtitle: 'Elevando a eficiência no processo da inovação.',
+      description: 'Construímos negócios sustentáveis com performance avançada de métricas operacionais, garantindo a experiência necessária importantes.'
+    },
+    {
       icon: Zap,
       title: 'Inovação Colaborativa',
       subtitle: 'Potencializamos soluções com parcerias inteligentes.',
       description: 'Combinamos sua empresa cliente ao universalismo e esfera logísticas que geram ideias inovadoras e criar soluções mais mais elevados que de tecnologia e desenvolvimento.'
+    },
+    {
+      icon: GraduationCap,
+      title: 'Capacitação',
+      subtitle: 'Formamos equipes preparadas para inovar.',
+      description: 'Oferecemos capacitação completa para desenvolver tecnologias de desenvolvimento, aplicações e gestão operacional na empresa.'
     }
   ];
 
@@ -42,7 +42,7 @@ const ValueSection = () => {
 
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {values.map((value, index) => (
-            <div className="flex items-start space-x-6 group">
+            <div key={index} className="flex items-start space-x-6 group">
               <MotionFade key={index} delay={index * 0.15} className='flex flex-col gap-8 border p-6 h-full'>
                 <div className='flex flex-row gap-4 justify-between'>
                   <div className='text-brand-dark mb-3'>

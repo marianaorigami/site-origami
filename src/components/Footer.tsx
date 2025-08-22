@@ -50,8 +50,8 @@ const Footer = () => {
             <div className="space-y-3">
               <p className="text-gray-300">
                 Rua Monsenhor João Ivo, Nº 34<br />
-                Formiga, Minas Gerais<br />
-                35570-104, Sala 3<br />
+                Sala 3, Formiga<br />
+                 Minas Gerais, 35570-104<br />
               </p>
             </div>
           </MotionFade>
