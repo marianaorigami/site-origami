@@ -40,7 +40,7 @@ const Cta = () => {
 
           <MotionFade delay={0.2} className="mb-8">
             <p className="text-xl font-thin md:text-2xl text-white/80 max-w-2xl mx-auto">
-              Damos o próximo passo ao seu lado, com método, clareza e resultados reais.
+              Damos o próximo passo ao seu lado, com mentalidade, método e resultados reais.
             </p>
           </MotionFade>
 
