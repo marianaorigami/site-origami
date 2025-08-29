@@ -16,7 +16,7 @@ const Services = () => {
             Como realizamos a inovação na prática
           </p>
           <h2 className="text-4xl md:text-5xl font-black bg-text-gradient bg-clip-text text-transparent">
-            Fundamentos da Inovação
+            Inovação de Ponta-a-Ponta
           </h2>
         </MotionFade>
 
@@ -27,12 +27,12 @@ const Services = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.5 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 z-40"
+              className="fixed inset-0 z-30"
             />
           )}
         </AnimatePresence>
 
-        <MotionFade delay={0.4} className="flex justify-center items-center gap-[-40px] mt-10 relative z-50">
+        <MotionFade delay={0.4} className="flex justify-center items-center gap-[-40px] mt-10 relative z-40">
           {circles.map((circle, index) => (
             <HoverCircle
               key={index}
