@@ -3,7 +3,7 @@ import { MoveRight } from 'lucide-react';
 import ButtonLink from './ui/buttonlink';
 import { MotionFade } from "@/components/MotionFade";
 
-const CTA = () => {
+const CallToAction = () => {
   return (
     <section className="relative min-h-svh py-20 flex items-center justify-center overflow-hidden">
 
@@ -59,4 +59,4 @@ const CTA = () => {
   );
 };
 
-export default CTA;
+export default CallToAction;

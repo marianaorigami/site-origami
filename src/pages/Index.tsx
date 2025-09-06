@@ -7,7 +7,7 @@ import Method from '@/components/Method';
 import Clients from '@/components/Clients';
 import Footer from '@/components/Footer';
 import Innovation from '@/components/Innovation';
-import CTA from '@/components/Cta';
+import CallToAction from '@/components/CallToAction';
 
 const Index = () => {
   return (
@@ -19,7 +19,7 @@ const Index = () => {
       <Method />
       <Manifest />
       <Clients />
-      <CTA />
+      <CallToAction />
       <Footer />
     </div>
   );
