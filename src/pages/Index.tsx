@@ -6,9 +6,8 @@ import Manifest from '@/components/Manifest';
 import Method from '@/components/Method';
 import Clients from '@/components/Clients';
 import Footer from '@/components/Footer';
-import Cta from '@/components/Cta';
 import Innovation from '@/components/Innovation';
-import Services from '@/components/Services';
+import CTA from '@/components/Cta';
 
 const Index = () => {
   return (
@@ -20,7 +19,7 @@ const Index = () => {
       <Method />
       <Manifest />
       <Clients />
-      <Cta />
+      <CTA />
       <Footer />
     </div>
   );
