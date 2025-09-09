@@ -51,7 +51,7 @@ export default function Innovation() {
           transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
         >
           <motion.img
-            src="/img/infinite.svg"
+            src="/image/infinite.svg"
             alt="Símbolo Infinito"
             className="infinite-image"
             animate={{
