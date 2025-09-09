@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <MotionFade delay={0.1} className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <img src="/img/logo_white.svg" alt="" />
+              <img src="/image/logo_white.svg" alt="" />
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
               Sua empresa com agilidade de uma startup. Somos o seu laboratório de inovação fora da sua empresa. Unindo mentalidade, método e resultados reais.

@@ -37,7 +37,7 @@ const Method = () => {
   return (
     <section className="relative py-24" id="method">
       <img
-        src="/background/bg_line.png"
+        src="/image-optimize/bg_line.webp"
         alt="Fundo"
         className="absolute inset-0 w-full h-full object-cover z-0"
       />

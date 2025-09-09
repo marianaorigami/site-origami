@@ -8,14 +8,14 @@ const Hero = () => {
     <section id="home" className="relative min-h-lvh flex items-center justify-center overflow-hidden">
       
       <img
-        src="/background/bg.png"
+        src="/image-optimize/bg.webp"
         alt="Fundo"
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
 
       <div className="absolute top-0 right-0 w-64 md:top-10 md:right-10 md:w-96 md:h-96 opacity-20">
         <img
-          src="/background/icon_animated.png"
+          src="/image-optimize/icon_animated.webp"
           alt=""
           className="w-full h-full object-contain"
         />
@@ -23,7 +23,7 @@ const Hero = () => {
 
       <div className="absolute w-56 left-10 bottom-20 md:bottom-56 md:left-10 md:w-72 md:h-80 opacity-15">
         <img
-          src="/background/icon_animated.png"
+          src="/image-optimize/icon_animated.webp"
           alt=""
           className="w-full h-full object-contain"
         />

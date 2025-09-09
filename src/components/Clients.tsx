@@ -8,15 +8,15 @@ import 'swiper/css';
 
 const Clients = () => {
   const clients = [
-    { name: 'Avante', image: "/clients/logo_avante.png", type_service: "Tecnologia" },
-    { name: 'Prumo', image: "/clients/logo_prumo.png", type_service: "Engenharia" },
-    { name: 'Transportado Cabral', image: "/clients/logo_tccabral.png", type_service: "Transporte" },
-    { name: 'Amep', image: "/clients/logo_amep.png", type_service: "Industria" },
-    { name: 'Alterosa', image: "/clients/logo_alterosa.png", type_service: "Indústria" },
-    { name: 'Bry', image: "/clients/logo_bry.png", type_service: "Tecnologia" },
-    { name: 'Hayann', image: "/clients/logo_hayann.png", type_service: "Confecções" },
-    { name: 'Syngular', image: "/clients/logo_syngular.png", type_service: "Tecnologia" },
-    { name: 'Certifica', image: "/clients/logo_certifica.png", type_service: "Certificação" }
+    { name: 'Avante', image: "/image-optimize/logo_avante.webp", type_service: "Tecnologia" },
+    { name: 'Prumo', image: "/image-optimize/logo_prumo.webp", type_service: "Engenharia" },
+    { name: 'Transportado Cabral', image: "/image-optimize/logo_tccabral.webp", type_service: "Transporte" },
+    { name: 'Amep', image: "/image-optimize/logo_amep.webp", type_service: "Industria" },
+    { name: 'Alterosa', image: "/image-optimize/logo_alterosa.webp", type_service: "Indústria" },
+    { name: 'Bry', image: "/image-optimize/logo_bry.webp", type_service: "Tecnologia" },
+    { name: 'Hayann', image: "/image-optimize/logo_hayann.webp", type_service: "Confecções" },
+    { name: 'Syngular', image: "/image-optimize/logo_syngular.webp", type_service: "Tecnologia" },
+    { name: 'Certifica', image: "/image-optimize/logo_certifica.webp", type_service: "Certificação" }
   ];
 
   return (
