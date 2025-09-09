@@ -41,7 +41,9 @@ const About = () => {
               </div>
               <div className="md:w-1/2 w-full max-w-[300px] aspect-square shadow-[12px_12px_0_0_#2D4A4C]">
                 <img
-                  src="/image-optimize/victor_picture.webp"
+                  src="/image-optimize/victor_picture-1024.webp"
+                  srcSet="/image-optimize/victor_picture-512.webp 512w, /image-optimize/victor_picture-1024.webp 1024w"
+                  sizes="(max-width: 768px) 80vw, (max-width: 1024px) 40vw, 300px"
                   alt="Victor"
                   className="w-full h-full object-cover"
                 />
@@ -61,7 +63,9 @@ const About = () => {
               </div>
               <div className="md:w-1/2 w-full max-w-[300px] aspect-square shadow-[12px_12px_0_0_#00AF69]">
                 <img
-                  src="/image-optimize/cecilia_picture.webp"
+                  src="/image-optimize/cecilia_picture-1024.webp"
+                  srcSet="/image-optimize/cecilia_picture-512.webp 512w, /image-optimize/cecilia_picture-1024.webp 1024w"
+                  sizes="(max-width: 768px) 80vw, (max-width: 1024px) 40vw, 300px"
                   alt="Maria Cecília"
                   className="w-full h-full object-cover"
                 />
@@ -73,8 +77,10 @@ const About = () => {
             <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-12 mb-12 border px-24 py-8 transition-all duration-300 hover:shadow-md">
               <div className="md:w-1/2 w-full max-w-[300px] aspect-square shadow-[12px_12px_0_0_#2D4A4C]">
                 <img
-                  src="/image-optimize/guilherme_picture.webp"
-                  alt="Maria Cecília"
+                  src="/image-optimize/guilherme_picture-1024.webp"
+                  srcSet="/image-optimize/guilherme_picture-512.webp 512w, /image-optimize/guilherme_picture-1024.webp 1024w"
+                  sizes="(max-width: 768px) 80vw, (max-width: 1024px) 40vw, 300px"
+                  alt="Guilherme Valadares"
                   className="w-full h-full object-cover"
                 />
               </div>
