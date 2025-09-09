@@ -31,7 +31,7 @@ const About = () => {
           </MotionFade>
 
           <MotionFade delay={0.2}>
-            <div className="flex flex-col md:flex-row items-center justify-between gap-12 border px-24 py-8 transition-all duration-300 hover:shadow-md">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-12 border px-8 md:px-24 py-8 transition-all duration-300 hover:shadow-md">
               <div className="md:w-1/2 text-black text-justify text-lg tracking-tight leading-relaxed">
                 Victor Couto, sócio-fundador, atua há mais de 15 anos liderando
                 iniciativas de inovação e transformação digital. Com passagens
@@ -52,7 +52,7 @@ const About = () => {
           </MotionFade>
 
           <MotionFade delay={0.3}>
-            <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-12 mb-12 border px-24 py-8 transition-all duration-300 hover:shadow-md">
+            <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-12 mb-12 border px-8 md:px-24 py-8 transition-all duration-300 hover:shadow-md">
               <div className="md:w-1/2 text-black text-justify text-lg tracking-tight leading-relaxed">
                 Maria Cecília Coelho, engenheira civil com MBA em Inovação, é
                 referência na gestão de produtos digitais. Com uma trajetória de
@@ -74,7 +74,7 @@ const About = () => {
           </MotionFade>
 
           <MotionFade delay={0.3}>
-            <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-12 mb-12 border px-24 py-8 transition-all duration-300 hover:shadow-md">
+            <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-12 mb-12 border px-8 md:px-24 py-8 transition-all duration-300 hover:shadow-md">
               <div className="md:w-1/2 w-full max-w-[300px] aspect-square shadow-[12px_12px_0_0_#2D4A4C]">
                 <img
                   src="/image-optimize/guilherme_picture-1024.webp"
