@@ -6,16 +6,20 @@ import { MotionFade } from "@/components/MotionFade";
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-lvh flex items-center justify-center overflow-hidden">
-      
+
       <img
-        src="/image-optimize/bg.webp"
+        src="/image-optimize/bg-1024.webp"
+        srcSet="/image-optimize/bg-1024.webp 1024w, /image-optimize/bg-512.webp 512w"
+        sizes="100vw"
         alt="Fundo"
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
 
       <div className="absolute top-0 right-0 w-64 md:top-10 md:right-10 md:w-96 md:h-96 opacity-20">
         <img
-          src="/image-optimize/icon_animated.webp"
+          src="/image-optimize/icon_animated-1024.webp"
+          srcSet="/image-optimize/icon_animated-1024.webp 1024w, /image-optimize/icon_animated-512.webp 512w"
+          sizes="(max-width: 768px) 25vw, (max-width: 1024px) 20vw, 15vw"
           alt=""
           className="w-full h-full object-contain"
         />
@@ -23,7 +27,9 @@ const Hero = () => {
 
       <div className="absolute w-56 left-10 bottom-20 md:bottom-56 md:left-10 md:w-72 md:h-80 opacity-15">
         <img
-          src="/image-optimize/icon_animated.webp"
+          src="/image-optimize/icon_animated-1024.webp"
+          srcSet="/image-optimize/icon_animated-1024.webp 1024w, /image-optimize/icon_animated-512.webp 512w"
+          sizes="(max-width: 768px) 30vw, (max-width: 1024px) 25vw, 20vw"
           alt=""
           className="w-full h-full object-contain"
         />

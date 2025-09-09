@@ -8,14 +8,16 @@ const CallToAction = () => {
     <section className="relative min-h-svh py-20 flex items-center justify-center overflow-hidden">
 
       <img
-        src="/image-optimize/bg.webp"
+        src="/image-optimize/bg-1024.webp"
+        srcSet="/image-optimize/bg-1024.webp 1024vw, /image-optimize/bg-512.webp 512vw"
         alt="Fundo"
         className="absolute rotate-180 inset-0 w-full h-full object-cover z-0"
       />
 
       <div className="absolute top-20 right-0 w-56 md:top-96 md:right-10 md:w-80 opacity-20">
         <img
-          src="/image-optimize/icon_animated.webp"
+          src="/image-optimize/icon_animated-1024.webp"
+          srcSet='/image-optimize/icon_animated-1024.webp 1024vw, /image-optimize/icon_animated-512.webp 512vw'
           alt=""
           className="w-full h-full object-contain"
         />
@@ -23,7 +25,8 @@ const CallToAction = () => {
 
       <div className="absolute w-56 left-10 bottom-20 md:bottom-56 md:left-10 md:w-96 opacity-15">
         <img
-          src="/image-optimize/icon_animated.webp"
+          src="/image-optimize/icon_animated-1024.webp"
+          srcSet='/image-optimize/icon_animated-1024.webp 1024vw, /image-optimize/icon_animated-512.webp 512vw'
           alt=""
           className="w-full h-full object-contain"
         />

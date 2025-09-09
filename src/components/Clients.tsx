@@ -8,15 +8,15 @@ import 'swiper/css';
 
 const Clients = () => {
   const clients = [
-    { name: 'Avante', image: "/image-optimize/logo_avante.webp", type_service: "Tecnologia" },
-    { name: 'Prumo', image: "/image-optimize/logo_prumo.webp", type_service: "Engenharia" },
-    { name: 'Transportado Cabral', image: "/image-optimize/logo_tccabral.webp", type_service: "Transporte" },
-    { name: 'Amep', image: "/image-optimize/logo_amep.webp", type_service: "Industria" },
-    { name: 'Alterosa', image: "/image-optimize/logo_alterosa.webp", type_service: "Indústria" },
-    { name: 'Bry', image: "/image-optimize/logo_bry.webp", type_service: "Tecnologia" },
-    { name: 'Hayann', image: "/image-optimize/logo_hayann.webp", type_service: "Confecções" },
-    { name: 'Syngular', image: "/image-optimize/logo_syngular.webp", type_service: "Tecnologia" },
-    { name: 'Certifica', image: "/image-optimize/logo_certifica.webp", type_service: "Certificação" }
+    { name: 'Avante', image: "/image-optimize/logo_avante-1024.webp", srcSet: "/image-optimize/logo_avante-1024.webp 1024w, /image-optimize/logo_avante-512.webp 512w", type_service: "Tecnologia" },
+    { name: 'Prumo', image: "/image-optimize/logo_prumo-1024.webp", srcSet: "/image-optimize/logo_prumo-1024.webp 1024w, /image-optimize/logo_prumo-512.webp 512w", type_service: "Engenharia" },
+    { name: 'Transportado Cabral', image: "/image-optimize/logo_tccabral-1024.webp", srcSet: "/image-optimize/logo_tccabral-1024.webp 1024w, /image-optimize/logo_tccabral-512.webp 512w", type_service: "Transporte" },
+    { name: 'Amep', image: "/image-optimize/logo_amep-1024.webp", srcSet: "/image-optimize/logo_amep-1024.webp 1024w, /image-optimize/logo_amep-512.webp 512w", type_service: "Industria" },
+    { name: 'Alterosa', image: "/image-optimize/logo_alterosa-1024.webp", srcSet: "/image-optimize/logo_alterosa-1024.webp 1024w, /image-optimize/logo_alterosa-512.webp 512w", type_service: "Indústria" },
+    { name: 'Bry', image: "/image-optimize/logo_bry-1024.webp", srcSet: "/image-optimize/logo_bry-1024.webp 1024w, /image-optimize/logo_bry-512.webp 512w", type_service: "Tecnologia" },
+    { name: 'Hayann', image: "/image-optimize/logo_hayann-1024.webp", srcSet: "/image-optimize/logo_hayann-1024.webp 1024w, /image-optimize/logo_hayann-512.webp 512w", type_service: "Confecções" },
+    { name: 'Syngular', image: "/image-optimize/logo_syngular-1024.webp", srcSet: "/image-optimize/logo_syngular-1024.webp 1024w, /image-optimize/logo_syngular-512.webp 512w", type_service: "Tecnologia" },
+    { name: 'Certifica', image: "/image-optimize/logo_certifica-1024.webp", srcSet: "/image-optimize/logo_certifica-1024.webp 1024w, /image-optimize/logo_certifica-512.webp 512w", type_service: "Certificação" }
   ];
 
   return (
@@ -54,6 +54,8 @@ const Clients = () => {
                 ) : (
                   <img
                     src={client.image}
+                    srcSet={client.srcSet}
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 20vw"
                     alt={client.name}
                     className="h-20 max-w-full object-contain"
                   />
